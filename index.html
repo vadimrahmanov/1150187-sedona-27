@@ -6,7 +6,9 @@
   </head>
   <body>
     <header>
-      <a><img src="img/logo.svg" width="140" height="72"></a>
+      <a>
+        <img src="img/logo.svg" width="140" height="72" alt="Логотип &laquo;Седона&raquo;">
+      </a>
       <nav>
         <ul>
           <li>
@@ -31,7 +33,7 @@
       <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
       <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       <section>
-        <h2>Причины, по которым Седона круче, чем Гранд Каньон.</h2>
+        <h2 class="visually-hidden">Причины, по которым Седона круче, чем Гранд Каньон.</h2>
         <ul>
           <li>
             <h2>Настоящий городок</h2>
@@ -76,12 +78,29 @@
       </section>
       
       <section>
-        <h2>Поиск гостиницы в Седоне</h2>
+        <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
         <p>Заинтересовались?</p>
         <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button>Поиск гостиницы в Седоне</button>
-        <!--Здесь будет форма-->
-        <a href="#">Найти</a>
+        <button type="button">Поиск гостиницы в Седоне</button>
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <p>
+            <label for="checkin-date">Дата заезда:</label>
+            <input id="checkin-date" type="date" name="check-in-date" value="2017-04-24">
+          </p>
+          <p>
+            <label for="checkout-date">Дата выезда:</label>
+            <input id="checkout-date" type="date" name="check-out-date" value="2017-06-04">
+          </p>
+          <p>
+            <label for="adults">Взрослые:</label>
+            <input id="adults" type="number" name="adults-amount" value="2">
+          </p>
+          <p>
+            <label for="children">Дети:</label>
+            <input id="children" type="number" name="children-amount" value="0">
+          </p>
+          <button type="submit">Найти</button>
+        </form>
       </section>
   </main>
   <footer>
