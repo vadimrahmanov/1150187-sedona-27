@@ -85,19 +85,29 @@
         <form action="https://echo.htmlacademy.ru" method="get">
           <p>
             <label for="checkin-date">Дата заезда:</label>
-            <input id="checkin-date" type="date" name="check-in-date" value="2017-04-24">
+            <input id="checkin-date" type="text" name="check-in-date" value="24 апреля 2017">
+            <button type="button">
+              <img src="img/calendar.svg" alt="Календарь для выбора даты заезда">
+            </button>
           </p>
           <p>
             <label for="checkout-date">Дата выезда:</label>
-            <input id="checkout-date" type="date" name="check-out-date" value="2017-06-04">
+            <input id="checkout-date" type="text" name="check-out-date" value="4 июля 2017">
+            <button type="button">
+              <img src="img/calendar.svg" alt="Календарь для выбора даты выезда">
+            </button>
           </p>
           <p>
             <label for="adults">Взрослые:</label>
-            <input id="adults" type="number" name="adults-amount" value="2">
+            <button type="button">&minus;</button>
+            <input id="adults" type="text" name="adults-amount" value="2">
+            <button type="button">&plus;</button>
           </p>
           <p>
             <label for="children">Дети:</label>
-            <input id="children" type="number" name="children-amount" value="0">
+            <button type="button">&minus;</button>
+            <input id="children" type="text" name="children-amount" value="0">
+            <button type="button">&plus;</button>
           </p>
           <button type="submit">Найти</button>
         </form>
