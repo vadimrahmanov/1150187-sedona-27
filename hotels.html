@@ -30,13 +30,48 @@
       <h1 class="visually-hidden">Поиск отелей в Седоне</h1>
       <section>
         <h2 class="visually-hidden">Фильтр для поиска жилья</h2>
-        <p>Инфраструктура</p>
-        <!--Здесь будут чекбоксы-->
-        <p>Тип жилья</p>
-        <!--Здесь будут чекбоксы-->
-        <p>Стоимость в сутки (Р):</p>
-        <p>От 0 | до 3000</p>
-        <button>Показать</button> <!--Потом это будет кнопка отправки формы-->
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <fieldset>
+            <legend>Инфраструктура</legend>
+            <ul>
+              <li>
+                <input id="swimpool" type="checkbox" name="pool" checked>
+                <label for="swimpool">Бассейн</label>
+              </li>
+              <li>
+                <input id="parking" type="checkbox" name="parking">
+                <label for="parking">Парковка</label>
+              </li>
+              <li>
+                <input id="wifi" type="checkbox" name="wifi">
+                <label for="wifi">Wi-Fi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья</legend>
+            <ul>
+              <li>
+                <input id="hotel" type="checkbox" name="hotel" checked>
+                <label for="hotel">Гостиница</label>
+              </li>
+              <li>
+                <input id="motel" type="checkbox" name="motel" checked>
+                <label for="motel">Мотель</label>
+              </li>
+              <li>
+                <input id="apartment" type="checkbox" name="apartment" checked>
+                <label for="apartment">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Стоимость в сутки (Р)</legend>
+            <label for="for="price-count">От 0 | до 3000</label><br>
+            <input id="price-count" type="range" min="0" max="3000" name="price-count">
+          </fieldset>
+          <button type="submit">Показать</button>
+        </form>
       </section>
 
       <section>
