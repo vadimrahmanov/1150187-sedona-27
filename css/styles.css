@@ -89,23 +89,20 @@ a {
   line-height: 21px;
 }
 
-.reason-1,
-.reason-2 {
+.reason-bluebg {
   background-color: #81b3d2;
   color: #ffffff;
   text-align: center;
 }
 
-.reason-1-2 {
+.first-reason-list {
   list-style-type: none;
   background-color: #ffffff;
   color: #000000;
   width: auto;
 }
 
-.reason-3,
-.reason-4,
-.reason-5 {
+.reason-graybg {
   text-align: center;
   background-color: #eeeeee;
 }
@@ -164,6 +161,12 @@ a {
   border: none;
 }
 
+.filter-results {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
 .filter-title {
   font-size: 16px;
   line-height: 21px;
@@ -176,41 +179,31 @@ a {
   text-align: left;
 }
 
-.filter-results {
+.filter-founded {
   font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
 }
 
 .sort-list {
   list-style-type: none;
 }
 
-.sort-title {
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 18px;
-}
-
 .sort-current {
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 18px;
   color: #81b3d2;
 }
 
-.sort {
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 18px;
+.sort-item {
   text-align: left;
   color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
 }
 
-a.sort:hover {
+.sort-list a:hover {
   color: #81b3d2;
 }
 
-a.sort:active {
+.sort-list a:active {
   color: #000000;
 }
 
@@ -223,13 +216,11 @@ a.sort:active {
 }
 
 .hotel-type-price {
-  font-weight: 400;
   line-height: 21px;
   color: #333333;
 }
 
 .rating {
-  font-weight: 400;
   line-height: 21px;
   color: #666666;
   text-align: center;
