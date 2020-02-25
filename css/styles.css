@@ -35,17 +35,18 @@ a {
 .main-header-logo {
   display: block;
   width: 140px;
-  height: 72px;
+  height: 71px;
   position: absolute;
   left: 50%;
-  transform: translate(-50%);
+  top: 0;
+  transform: translateX(-50%);
 }
 
 .site-navigation {
+  list-style-type: none;
   display: flex;
   justify-content: space-around;
   padding: 0;
-  list-style-type: none;
   margin: auto;
   line-height: 56px;
 }
