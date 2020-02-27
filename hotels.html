@@ -35,70 +35,75 @@
         <section>
           <h2 class="visually-hidden">Фильтр для поиска жилья</h2>
           <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
-            <fieldset class="filter-fieldset">
-              <legend class="filter-title">Инфраструктура</legend>
-              <ul class="sort-list">
-                <li>
-                  <input id="swimpool" type="checkbox" name="infrastructure" value="swimpool" checked>
-                  <label class="filter-item" for="swimpool">Бассейн</label>
-                </li>
-                <li>
-                  <input id="parking" type="checkbox" name="infrastructure" value="parking">
-                  <label class="filter-item" for="parking">Парковка</label>
-                </li>
-                <li>
-                  <input id="wifi" type="checkbox" name="infrastructure" value="wifi">
-                  <label class="filter-item" for="wifi">Wi-Fi</label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="filter-fieldset">
-              <legend class="filter-title">Тип жилья</legend>
-              <ul class="sort-list">
-                <li>
-                  <input id="hotel" type="checkbox" name="hotel" checked>
-                  <label class="filter-item" for="hotel">Гостиница</label>
-                </li>
-                <li>
-                  <input id="motel" type="checkbox" name="motel" checked>
-                  <label class="filter-item" for="motel">Мотель</label>
-                </li>
-                <li>
-                  <input id="apartment" type="checkbox" name="apartment" checked>
-                  <label class="filter-item" for="apartment">Апартаменты</label>
-                </li>
-              </ul>
-            </fieldset>
+            <div class="wrapper">
+              <fieldset class="filter-fieldset">
+                <legend class="filter-title">Инфраструктура</legend>
+                <ul class="sort-filter">
+                  <li>
+                    <input id="swimpool" type="checkbox" name="infrastructure" value="swimpool" checked>
+                    <label class="filter-item" for="swimpool">Бассейн</label>
+                  </li>
+                  <li>
+                    <input id="parking" type="checkbox" name="infrastructure" value="parking">
+                    <label class="filter-item" for="parking">Парковка</label>
+                  </li>
+                  <li>
+                    <input id="wifi" type="checkbox" name="infrastructure" value="wifi">
+                    <label class="filter-item" for="wifi">Wi-Fi</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="filter-fieldset">
+                <legend class="filter-title">Тип жилья</legend>
+                <ul class="sort-filter">
+                  <li>
+                    <input id="hotel" type="checkbox" name="hotel" checked>
+                    <label class="filter-item" for="hotel">Гостиница</label>
+                  </li>
+                  <li>
+                    <input id="motel" type="checkbox" name="motel" checked>
+                    <label class="filter-item" for="motel">Мотель</label>
+                  </li>
+                  <li>
+                    <input id="apartment" type="checkbox" name="apartment" checked>
+                    <label class="filter-item" for="apartment">Апартаменты</label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
             <fieldset class="filter-fieldset">
               <legend class="filter-title">Стоимость в сутки (Р)</legend>
               <label class="filter-item" for="for="price-count">От 0 | до 3000</label><br>
               <input id="price-count" type="range" min="0" max="3000" name="price-count">
+              <button type="submit">Показать</button>
             </fieldset>
-            <button type="submit">Показать</button>
           </form>
         </section>
 
         <section class="filter-results">
           <h2 class="visually-hidden">Найденные отели</h2>
-          <p class="filter-founded">Найдено: 3</p>
-          <p>Сортировка:</p>
-          <ul class="sort-list">
-            <li>
-              <a class="sort-current" href="">По цене</a>
-            </li>
-            <li>
-              <a class="sort-item" href="">По типу</a>
-            </li>
-            <li>
-              <a class="sort-item" href="">По рейтингу</a>
-            </li>
-            <li>
-              <a href="">Сортировать по возростанию</a>
-            </li>
-            <li>
-              <a href="">Сортировать по убыванию</a>
-            </li>
-          </ul>
+          <div class="filter-sort-wrap">
+            <p class="filter-founded">Найдено: 3</p>
+            <ul class="sort-list">
+              <li>
+                <a class="sort-current" href="">По цене</a>
+              </li>
+              <li>
+                <a class="sort-item" href="">По типу</a>
+              </li>
+              <li>
+                <a class="sort-item" href="">По рейтингу</a>
+              </li>
+              <div class="sort-by">
+                <li>
+                  <a href="">Сортировать по возростанию</a>
+                </li>
+                <li>
+                  <a href="">Сортировать по убыванию</a>
+                </li>
+              </div>
+            </ul>
+          </div>
           <ul class="hotel-list">
             <li>
               <article class="hotel-item">
