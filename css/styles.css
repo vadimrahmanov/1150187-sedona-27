@@ -275,8 +275,10 @@ img {
   height: 38px;
   padding: 14px;
   margin: 0;
-  margin-left: -3px;
-  margin-right: -4px;
+}
+
+.people-amount-input {
+  display: inline-flex;
 }
 
 .btn-people-amount {
@@ -349,21 +351,19 @@ img {
   fill: #81b3d2;
 }
 
-.field {
-  display: inline-block;
-}
-
 .field-adult {
   margin-right: 49px;
 }
 
 .adult {
-  margin-right: 32px;
+  margin-right: 36px;
+  align-self: center;
 }
 
 .children {
-  margin-right: 25px;
+  margin-right: 27px;
   margin-left: 49px;
+  align-self: center;
 }
 
 .booking-title {
