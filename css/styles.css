@@ -560,6 +560,7 @@ img {
 
 .price-controls .min-price,
 .price-controls .max-price {
+  font-weight: 400;
   width: 90px;
   padding-left: 65px;
 }
