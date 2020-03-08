@@ -66,8 +66,6 @@ img {
 .site-navigation a,
 .site-navigation a:visited {
   color: #000000;
-
-  display: block;
 }
 
 .site-navigation a:hover,
