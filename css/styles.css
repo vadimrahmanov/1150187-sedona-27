@@ -60,20 +60,7 @@ img {
   padding: 0;
   margin: auto;
 
-  padding-left: 72px;
-  padding-right: 72px;
-}
-
-.site-navigation li:first-child {
-  padding-right: 147px;
-}
-
-.site-navigation li:nth-child(2) {
-  margin-right: auto;
-}
-
-.site-navigation li:last-child {
-  padding-left: 161px;
+  padding: 16px 72px
 }
 
 .site-navigation a,
@@ -81,8 +68,6 @@ img {
   color: #000000;
 
   display: block;
-  padding-top: 16px;
-  padding-bottom: 16px;
 }
 
 .site-navigation a:hover,
@@ -96,6 +81,14 @@ img {
 
 .site-navigation a.current-page {
   color: #766357;
+}
+
+.navigation-item {
+  width: 25%;
+}
+
+.navigation-item-right {
+  text-align: right;
 }
 
 .banner {
@@ -212,16 +205,19 @@ img {
   height: 72px;
 
   content: "";
+}
+
+.reason-item-list .reason-housing::before {
   background-image: url("../img/icon-1.svg");
 }
 
-.reason-item-list li:nth-child(2)::before {
+.reason-item-list .reason-food::before {
   width: 74px;
   height: 70px;
   background-image: url("../img/icon-3.svg");
 }
 
-.reason-item-list li:last-child::before {
+.reason-item-list .reason-souvenir::before {
   width: 64px;
   height: 76px;
   background-image: url("../img/icon-2.svg");
@@ -597,13 +593,12 @@ img {
 
 .range-toggle {
   position: absolute;
-  top: -9px;
+  top: -11px;
 
-  width: 4px;
-  height: 4px;
+  height: 23px;
 
   background: #ababab;
-  border: 8px solid #ffffff;
+  border: 6px solid #ffffff;
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
@@ -643,35 +638,30 @@ img {
   background: #ffffff;
 }
 
-.check-input {
-  position: absolute;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-
-.checkbox-item {
-  padding-left: 35px;
+.check {
+  margin-left: 36px;
 }
 
 .checkbox {
   position: absolute;
-  width: 23px;
-  height: 23px;
-  background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='23' viewBox='0 0 23 23'%3E%3Cpath fill='%23FFFFFF' d='M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z'/%3E%3C/svg%3E%0A");
+  display: block;
 }
 
-.check-input:checked + .checkbox {
-  width: 27px;
-  background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='23'%3E%3Cpath fill='%23ffffff' d='M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z'/%3E%3Cpath fill='%23ffffff' d='M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0020 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z'/%3E%3C/svg%3E");
+.checkbox-checked {
+  display: none;
 }
 
-.check-input:disabled + .checkbox {
-  background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='23' viewBox='0 0 23 23'%3E%3Cpath fill='%236a6a6a' d='M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z'/%3E%3C/svg%3E%0A");
+.check-input:checked ~ .checkbox-checked {
+  position: absolute;
+  display: block;
 }
 
-.check-input:disabled:checked + .checkbox {
-  background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='23'%3E%3Cpath fill='%236a6a6a' d='M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z'/%3E%3Cpath fill='%236a6a6a' d='M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0020 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z'/%3E%3C/svg%3E");
+.check-input:disabled + .checkbox path {
+  fill: #6a6a6a;
+}
+
+.check-input:disabled:checked ~ svg path {
+  fill: #6a6a6a;
 }
 
 .filter-item {
@@ -781,11 +771,15 @@ img {
   margin: 0;
 }
 
-.hotel-name:hover {
+.hotel-name a:visited {
+  color: #000000;
+}
+
+.hotel-name a:hover {
   color: #81b3d2;
 }
 
-.hotel-name:active {
+.hotel-name a:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
