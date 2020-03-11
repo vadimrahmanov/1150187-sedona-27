@@ -121,6 +121,8 @@ img {
   text-align: center;
 
   margin-top: 61px;
+  padding-left: 380px;
+  padding-right: 380px;
 }
 
 .title-description {
@@ -134,48 +136,61 @@ img {
 
 .reasons-list {
   list-style-type: none;
-
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
 
-.wrapper {
+.reasons-item-container {
   display: flex;
+  flex-wrap: wrap;
 }
 
-.reason-blue {
-  background-color: #81b3d2;
+.reason-item {
   color: #ffffff;
   text-align: center;
-}
 
-.reason-one-item {
+  box-sizing: border-box;
+  width: 400px;
   padding-top: 46px;
-  padding-right: 60px;
-  padding-bottom: 63px;
-  padding-left: 60px;
+
+  background-color: #81b3d2;
 }
 
-.reason-two-item {
-  padding-top: 49px;
-  padding-right: 49px;
-  padding-bottom: 65px;
-  padding-left: 48px;
+.reason-item h2,
+.reason-item p {
+  margin: 0;
 }
 
-.reason-one-list {
-  text-align: center;
+.reason-item .reason-description {
+  padding-top: 26px;
+}
+
+.reason-image {
+  display: block;
+  width: 800px;
+  height: 256px;
 }
 
 .reason-title {
   font-size: 21px;
   line-height: 21px;
-  font-weight: 700;
+  padding-left: 140px;
+  padding-right: 140px;
 }
 
 .reason-description {
   font-weight: 400;
   line-height: 21px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.reason-two-description {
+  font-weight: 400;
+  line-height: 21px;
+  padding-top: 26px;
 }
 
 .reason-item-list {
@@ -183,7 +198,8 @@ img {
   display: flex;
   text-align: center;
 
-  height: 330px;
+  width: 1200px;
+  min-height: 330px;
   padding: 0;
 
   background-color: #ffffff;
@@ -192,7 +208,7 @@ img {
 
 .reason-item-list li {
   position: relative;
-  flex-basis: 400px;
+  width: 400px;
 }
 
 .reason-item-list li::before {
@@ -225,12 +241,14 @@ img {
 .reason-item-list .reason-title {
   padding-top: 132px;
   margin-bottom: 31px;
+  font-weight: 700;
 }
 
 .reasons {
   list-style-type: none;
   text-align: center;
 
+  box-sizing: border-box;
   flex-basis: 400px;
   min-height: 256px;
 
@@ -238,7 +256,7 @@ img {
 }
 
 .reasons .reason-title {
-  margin-top: 50px;
+  padding-top: 50px;
 }
 
 .booking-section {
@@ -463,6 +481,10 @@ img {
   background-color: #5496bd;
 }
 
+.wrapper {
+  display: flex;
+}
+
 .sort-filter {
   list-style-type: none;
   padding: 0;
@@ -592,12 +614,13 @@ img {
 
 .range-toggle {
   position: absolute;
-  top: -11px;
-
-  height: 23px;
+  top: -10px;
+  height: 22px;
+  width: 23px;
+  padding: 0;
 
   background: #ababab;
-  border: 6px solid #ffffff;
+  border: 9px solid #ffffff;
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
@@ -644,7 +667,7 @@ img {
 
 .checkbox {
   position: absolute;
-  top: -2px;
+  top: -3px;
   left: 0;
   display: block;
 }
@@ -655,7 +678,7 @@ img {
 
 .check-input:checked ~ .checkbox-checked {
   position: absolute;
-  top: -2px;
+  top: -3px;
   left: 0;
   display: block;
 }
@@ -675,12 +698,20 @@ img {
   font-weight: 700;
   line-height: 26px;
 
-  margin-left: 72px;
-  margin-right: 49px;
+  margin: 0;
+  padding-top: 31px;
+  padding-left: 72px;
+  padding-right: 49px;
+}
+
+.filter-founded + p {
+  margin: 0;
+  padding-top: 38px;
 }
 
 .filter-sort-wrap {
   display: flex;
+  min-height: 85px;
 }
 
 .sort-list {
@@ -690,8 +721,9 @@ img {
   justify-content: space-between;
   align-items: center;
 
-  width: 350px;
-  padding: 0;
+  width: 250px;
+  padding-left: 40px;
+  margin-bottom: 0;
 }
 
 .sort-by {
