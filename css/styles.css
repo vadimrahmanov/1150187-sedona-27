@@ -98,6 +98,7 @@ img {
   text-align: center;
 
   height: 500px;
+  margin-bottom: 61px;
 }
 
 .banner::after {
@@ -120,9 +121,8 @@ img {
   font-size: 21px;
   text-align: center;
 
-  margin-top: 61px;
-  padding-left: 380px;
-  padding-right: 380px;
+  width: 440px;
+  margin: 0 auto;
 }
 
 .title-description {
@@ -158,26 +158,28 @@ img {
   background-color: #81b3d2;
 }
 
-.reason-item h2,
-.reason-item p {
-  margin: 0;
-}
-
 .reason-item .reason-description {
   padding-top: 26px;
 }
 
 .reason-image {
-  display: block;
+  display: flex;
   width: 800px;
-  height: 256px;
+}
+
+.reason-item h2 {
+  width: 155px;
 }
 
 .reason-title {
   font-size: 21px;
   line-height: 21px;
-  padding-left: 140px;
-  padding-right: 140px;
+  width: 130px;
+  margin: 0 auto;
+}
+
+.reason-item p {
+  margin: 0;
 }
 
 .reason-description {
@@ -209,6 +211,7 @@ img {
 .reason-item-list li {
   position: relative;
   width: 400px;
+  padding-top: 161px;
 }
 
 .reason-item-list li::before {
@@ -239,7 +242,6 @@ img {
 }
 
 .reason-item-list .reason-title {
-  padding-top: 132px;
   margin-bottom: 31px;
   font-weight: 700;
 }
@@ -513,8 +515,9 @@ img {
 }
 
 .filter-fieldset {
-  border: none;
   display: flex;
+  padding-right: 115px;
+  border: none;
 }
 
 .filter-results {
@@ -803,6 +806,7 @@ img {
   margin: 0;
 }
 
+.hotel-name a:link,
 .hotel-name a:visited {
   color: #000000;
 }
