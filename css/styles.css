@@ -666,7 +666,7 @@ img {
 
 .check {
   position: relative;
-  padding-left: 36px;
+  padding-left: 40px;
 }
 
 .checkbox {
@@ -685,6 +685,10 @@ img {
   top: -3px;
   left: 0;
   display: block;
+}
+
+.check-input:checked ~ .checkbox {
+  display: none;
 }
 
 .check-input:disabled ~ svg path{
