@@ -309,14 +309,11 @@ img {
   transform: translateX(-50%);
   box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
   background-color: #ffffff;
+  animation: animationFrames ease 1s;
 }
 
 .booking-form-hidden {
   display: none;
-}
-
-.booking-form-animation{
-  animation: animationFrames ease 1s;
 }
 
 .booking-form-error {
@@ -626,6 +623,7 @@ img {
   line-height: 21px;
 
   display: inline-block;
+  vertical-align: middle;
   padding-top: 5px;
 
   cursor: pointer;
@@ -975,6 +973,7 @@ img {
   color: #ffffff;
 
   display: inline-block;
+  vertical-align: middle;
   box-sizing: border-box;
   padding-top: 3px;
   padding-bottom: 3px;
