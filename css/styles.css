@@ -1136,11 +1136,11 @@ img {
 
 .copyright {
   font-weight: 400;
-  padding-top: 4px;
+  transform: translateY(-10px);
 }
 
-.copyright-link {
-  vertical-align: middle;
+.copyright-logo {
+  transform: translateY(35%);
 }
 
 .copyright-logo:hover path {
@@ -1153,11 +1153,11 @@ img {
 
 @keyframes animationFrames{
   0% {
-    opacity:0;
+    opacity: 0;
     transform: translate(-50%,-15px)  ;
   }
   100% {
-    opacity:1;
+    opacity: 1;
     transform: translate(-50%,0px)  ;
   }
 }
