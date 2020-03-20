@@ -762,7 +762,7 @@ img {
 }
 
 input[type="checkbox"]:focus ~ svg path {
-  fill: #81b3d2;
+  fill: #1c4f80;
 }
 
 .filter-item {
