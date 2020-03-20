@@ -1091,9 +1091,7 @@ input[type="checkbox"]:focus ~ svg path {
 
 .social-list {
   display: flex;
-  justify-content: space-around;
 
-  width: 150px;
   padding: 0;
 
   transform: translateX(-30px);
