@@ -182,8 +182,12 @@ img {
   font-size: 21px;
   line-height: 21px;
 
-  width: 130px;
+  width: 170px;
   margin: 0 auto;
+}
+
+.reason-title-ru {
+  width: 130px;
 }
 
 .reason-item p {
@@ -456,12 +460,31 @@ img {
   margin-right: 49px;
 }
 
+.check-in-date {
+  margin-right: 30px;
+}
+
+.check-out-date {
+  margin-right: 20px;
+}
+
 .adult {
+  align-self: center;
+  margin-right: 55px;
+}
+
+.adult-ru {
   align-self: center;
   margin-right: 39px;
 }
 
 .children {
+  align-self: center;
+  margin-right: 19px;
+  margin-left: 30px;
+}
+
+.children-ru {
   align-self: center;
   margin-right: 27px;
   margin-left: 52px;
@@ -1153,21 +1176,8 @@ input[type="checkbox"]:focus ~ svg path {
   background-image: url("../img/youtube.svg");
 }
 
-.copyright {
-  font-weight: 400;
-  transform: translateY(-10px);
-}
-
-.copyright-logo {
-  transform: translateY(35%);
-}
-
-.copyright-logo:hover path {
-  fill: #81b3d2;
-}
-
-.copyright-logo:active path {
-  fill: rgba(0, 0, 0, 0.3);
+.select-language {
+  font-size: 25px;
 }
 
 @keyframes animationFrames{
