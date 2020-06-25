@@ -1,5 +1,5 @@
 # Sedona
-My project, which I did on my first HTML, CSS course. I made this website from template using Zeplin and Photoshop and had reviews from tutor.
+My project, which I did on my first HTML, CSS course. I made this website from a template using Zeplin and Photoshop and had reviews from the tutor.
 #### The HTML markup is semantic.
 This is absolutely static website, which has good accessibility.
 ## Technologies
